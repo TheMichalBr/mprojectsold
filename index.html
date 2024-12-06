@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="cs-cz">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"><link rel="icon" href="./media/pr/pr1.jpg" type="image/x-icon">
+    <title>Lea Vagová - Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="./media/pr/pr1.jpg" alt="Profile" class="profile-pic">
+            <h1>Lea “xia” Vagová</h1>
+            <p class="description">Mail: vagovalea@gmail.com</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/_leusikk/" target="_blank" class="icon instagram" title="Instagram"></a>
+                <a href="https://www.twitch.tv/xiacs2" target="_blank" class="icon twitch" title="Twitch"></a>
+                <a href="https://x.com/victoriabaji" target="_blank" class="icon x" title="X (Twitter)"></a>
+                <a href="https://pinterest.com/xia" target="_blank" class="icon pinterest" title="Pinterest"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="socials">
+        <a href="index.html" class="cp" title="Digital art">DIGITAL ART</a>
+        <a href="paintings.html" class="" title="Paintings">PAINTINGS</a>
+        <a href="emotes.html" class="" title="Emotes">EMOTES</a></div>
+        <hr>
+        <div class="portfolio">
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart10.jpg')" style="background-image: url('./media/pi/digitalart/dart10.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart9.jpg')" style="background-image: url('./media/pi/digitalart/dart9.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart8.jpg')" style="background-image: url('./media/pi/digitalart/dart8.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart7.jpg')" style="background-image: url('./media/pi/digitalart/dart7.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart6.jpg')" style="background-image: url('./media/pi/digitalart/dart6.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart5.jpg')" style="background-image: url('./media/pi/digitalart/dart5.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart4.jpg')" style="background-image: url('./media/pi/digitalart/dart4.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart3.jpg')" style="background-image: url('./media/pi/digitalart/dart3.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart2.jpg')" style="background-image: url('./media/pi/digitalart/dart2.jpg');"></div>
+            <div class="item" onclick="openImage('./media/pi/digitalart/dart1.jpg')" style="background-image: url('./media/pi/digitalart/dart1.jpg');"></div>
+            <div class="item" onclick="openImage('')" style="background-image: url('');"></div>
+            <div class="item" onclick="openImage('')" style="background-image: url('');"></div>
+        </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+<script src="index.js"></script></body></html>
