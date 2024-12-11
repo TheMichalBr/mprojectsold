@@ -7,9 +7,9 @@ body {
     align-items: center;
     min-height: 100vh;
     min-width: 325px;
-    background: linear-gradient(90deg, rgba(214, 104, 162, 1) 0%, rgba(213, 111, 137, 1) 35%, rgba(237, 87, 126, 1) 73%, rgba(255, 103, 201, 1) 100%);
-    --sb-track-color: #564040;
-    --sb-thumb-color: #c07f8f;
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    --sb-track-color: #3d084d;
+    --sb-thumb-color: #7c2957;
     --sb-size: 13px;
 }
 
@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 600px;
     width: 90%;
     padding: 20px;
-    background: #fafafa;
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -63,11 +63,18 @@ h1 {
     color: #222;
 }
 
-.description {
-    font-size: 0.9em;
-    color: #555;
+.email {
+    font-size: 0.75em;
+    color: #555555bb;
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 a:link {
@@ -124,23 +131,38 @@ hr {
 }
 
 .instagram {
-    background-image: url('./media/ic/instagram.svg');
+    background-image: url('./media/svg/instagram.svg');
     filter: invert(35%) sepia(69%) saturate(3790%) hue-rotate(320deg) brightness(89%) contrast(97%);
 }
 
-.twitch {
-    background-image: url('./media/ic/twitch.svg');
-    filter: invert(27%) sepia(83%) saturate(2544%) hue-rotate(251deg) brightness(97%) contrast(99%);
-}
-
 .x {
-    background-image: url('./media/ic/x.svg');
+    background-image: url('./media/svg/x.svg');
     filter: invert(50%) sepia(42%) saturate(1281%) hue-rotate(168deg) brightness(97%) contrast(96%);
 }
 
-.pinterest {
-    background-image: url('./media/ic/pinterest.svg');
-    filter: invert(13%) sepia(91%) saturate(7218%) hue-rotate(347deg) brightness(88%) contrast(105%);
+.tiktok {
+    background-image: url('./media/svg/tiktok.svg');
+    filter: invert(30%) sepia(83%) saturate(4596%) hue-rotate(333deg) brightness(104%) contrast(99%);
+}
+
+.youtube {
+    background-image: url('./media/svg/youtube.svg');
+    filter: invert(14%) sepia(84%) saturate(6937%) hue-rotate(5deg) brightness(101%) contrast(119%);
+}
+
+.twitch {
+    background-image: url('./media/svg/twitch.svg');
+    filter: invert(27%) sepia(83%) saturate(2544%) hue-rotate(251deg) brightness(97%) contrast(99%);
+}
+
+.steam {
+    background-image: url('./media/svg/steam.svg');
+    filter: invert(24%) sepia(12%) saturate(1942%) hue-rotate(165deg) brightness(94%) contrast(90%);
+}
+
+.kofi {
+    background-image: url('./media/svg/kofi.svg');
+    filter: invert(45%) sepia(25%) saturate(5734%) hue-rotate(350deg) brightness(100%) contrast(103%);
 }
 
 .portfolio {
