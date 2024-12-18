@@ -7,10 +7,24 @@ body {
     align-items: center;
     min-height: 100vh;
     min-width: 325px;
-    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
-    --sb-track-color: #3d084d;
+    background: radial-gradient(circle, rgb(173, 83, 137), rgb(60, 16, 83));
+    background-size: 200% 200%;
+    animation: gradient-animation 12s infinite ease-in-out;
+    --sb-track-color: #330541;
     --sb-thumb-color: #7c2957;
     --sb-size: 13px;
+}
+
+    @keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 body::-webkit-scrollbar {
@@ -41,6 +55,8 @@ body::-webkit-scrollbar-thumb {
 
 .container {
     text-align: center;
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
     max-width: 600px;
     width: 90%;
     padding: 20px;
@@ -75,30 +91,6 @@ h1 {
     color: #555;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-a:link {
-    text-decoration: none;
-    color: #333333
-}
-
-a:visited {
-    text-decoration: none;
-    color: #333333
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgb(158, 45, 158);
-}
-
-a:active {
-    text-decoration: none;
-    color: rgb(158, 45, 158);
-}
-
-.cp {
-    font-weight: bold;
 }
 
 hr {
@@ -179,15 +171,17 @@ hr {
     background-size: cover;
     background-position: center;
     border-radius: 5px;
+    perspective: 1000px;
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .item:hover {
-    transform: scale(1.05);
-    transition-delay: 2s, 200ms;
-    transition: transform 0.85s;
+    /*transform: scale(1.05);
+    transition-delay: 2s, 200ms;*/
+    transition: transform 50ms;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
 }
 
 .modal {
@@ -216,4 +210,41 @@ hr {
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #706e80;
+    color: white;
+    transition: background-color 0.3s, transform 0.25s;
+    text-decoration: none;
+}
+
+button.active {
+    background-color: rgb(100, 25, 122);
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(136, 27, 136);
+}
+
+.content {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.89);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.content.active {
+    display: block;
 }
